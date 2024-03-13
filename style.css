@@ -1,0 +1,160 @@
+body {
+    font-family: 'Inter';
+    overflow-x: hidden;
+}
+
+
+.nav__mob-header {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__header {
+    background-color: #F9FAFB;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 40px;
+    justify-content: center;
+}
+
+.nav__logo {
+    width: 120px;
+}
+
+.nav__item {
+    display: block;
+    list-style: none;
+    padding: 0 .5rem;
+    font-size: .8rem;
+}
+
+.nav__item--main {
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.nav__item--secondary {
+    display: block;
+    font-size: 1.3rem;
+    line-height: 170%;
+}
+
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+
+#mainNav,
+#commercialProducts {
+    transition: .8s all;
+}
+
+.cta-btn {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.cta-btn:hover {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.cta-btn--light {
+    color: black;
+}
+
+.cta-btn--green {
+    color: white;
+    background-color: #4AB563;
+}
+
+.menu--hide-left {
+    transform: translateX(-160px);
+    opacity: 0;
+    height: 0px;
+    width: 0;
+}
+
+.menu--hide-right {
+    transform: translateX(160px);
+    opacity: 0;
+    height: 0px;
+    width: 0;
+}
+
+.menu--shown {
+    transform: translateX(0);
+    opacity: 1;
+    height: auto;
+    width: auto;
+}
+
+/* 
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+} */
+.nav-menu--desktop,
+.nav-menu--desktop-show {
+    transition: .8s all;
+}
+
+.nav-menu--desktop {
+    height: 0px;
+    opacity: 0;
+    transform: translateY(-600px);
+}
+
+.nav-menu--desktop-show {
+    height: auto;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    .nav__item {
+        display: inline-block;
+    }
+
+    .nav__item--main {
+        font-size: 1rem;
+        padding: .5rem;
+    }
+
+    .nav__header {
+        justify-content: space-between;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        height: 80px;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .cta-btn {
+        display: inline-block;
+        width: auto;
+        ;
+    }
+}
